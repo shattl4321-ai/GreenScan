@@ -1,0 +1,321 @@
+{
+  "version": "1.0",
+  "fertilizers": [
+    {
+      "id": "fert_nitrogen_spring",
+      "name": "Азотное удобрение",
+      "category": "mineral",
+      "season": ["spring"],
+      "nutrients": {
+        "nitrogen": "high",
+        "phosphorus": "low",
+        "potassium": "low"
+      },
+      "purpose": ["growth", "greening"],
+      "applicable_conditions": ["weak_growth", "pale_grass", "post_winter_recovery"],
+      "avoid_conditions": ["autumn", "heat_stress"],
+      "notes": "Используется весной для активного роста газона"
+    },
+    {
+      "id": "fert_urea",
+      "name": "Мочевина (карбамид)",
+      "category": "mineral",
+      "season": ["spring", "early_summer"],
+      "nutrients": {
+        "nitrogen": "high",
+        "phosphorus": "low",
+        "potassium": "low"
+      },
+      "purpose": ["growth"],
+      "applicable_conditions": ["nitrogen_deficiency"],
+      "avoid_conditions": ["autumn"],
+      "notes": "Быстрое азотное удобрение, требует аккуратного внесения"
+    },
+    {
+      "id": "fert_ammonium_nitrate",
+      "name": "Аммиачная селитра",
+      "category": "mineral",
+      "season": ["spring"],
+      "nutrients": {
+        "nitrogen": "high",
+        "phosphorus": "low",
+        "potassium": "low"
+      },
+      "purpose": ["growth"],
+      "applicable_conditions": ["slow_growth"],
+      "avoid_conditions": ["heat_stress"],
+      "notes": "Используется для быстрого восстановления газона"
+    },
+    {
+      "id": "fert_npk_balanced",
+      "name": "Комплексное удобрение NPK (сбалансированное)",
+      "category": "mineral",
+      "season": ["summer"],
+      "nutrients": {
+        "nitrogen": "medium",
+        "phosphorus": "medium",
+        "potassium": "medium"
+      },
+      "purpose": ["maintenance"],
+      "applicable_conditions": ["general_maintenance"],
+      "avoid_conditions": ["drought"],
+      "notes": "Поддерживает плотность и цвет газона летом"
+    },
+    {
+      "id": "fert_npk_micro",
+      "name": "Комплексное удобрение с микроэлементами",
+      "category": "mineral",
+      "season": ["spring", "summer"],
+      "nutrients": {
+        "nitrogen": "medium",
+        "phosphorus": "medium",
+        "potassium": "medium"
+      },
+      "purpose": ["color_improvement", "maintenance"],
+      "applicable_conditions": ["pale_grass"],
+      "avoid_conditions": [],
+      "notes": "Содержит железо и другие микроэлементы для улучшения окраски"
+    },
+    {
+      "id": "fert_autumn_pk",
+      "name": "Осеннее фосфорно-калийное удобрение",
+      "category": "mineral",
+      "season": ["autumn"],
+      "nutrients": {
+        "nitrogen": "low",
+        "phosphorus": "medium",
+        "potassium": "high"
+      },
+      "purpose": ["winter_preparation"],
+      "applicable_conditions": ["autumn_care"],
+      "avoid_conditions": ["spring"],
+      "notes": "Подготавливает газон к зиме, укрепляет корни"
+    },
+    {
+      "id": "fert_superphosphate",
+      "name": "Суперфосфат",
+      "category": "mineral",
+      "season": ["autumn"],
+      "nutrients": {
+        "nitrogen": "low",
+        "phosphorus": "high",
+        "potassium": "low"
+      },
+      "purpose": ["root_development"],
+      "applicable_conditions": ["weak_root_system"],
+      "avoid_conditions": [],
+      "notes": "Развивает корневую систему"
+    },
+    {
+      "id": "fert_potassium_sulfate",
+      "name": "Сульфат калия",
+      "category": "mineral",
+      "season": ["autumn"],
+      "nutrients": {
+        "nitrogen": "low",
+        "phosphorus": "low",
+        "potassium": "high"
+      },
+      "purpose": ["stress_resistance"],
+      "applicable_conditions": ["winter_preparation", "drought_risk"],
+      "avoid_conditions": [],
+      "notes": "Повышает устойчивость к засухе и морозам"
+    },
+    {
+      "id": "fert_iron",
+      "name": "Железо (сульфат или хелат)",
+      "category": "micronutrient",
+      "season": ["spring", "summer"],
+      "nutrients": {},
+      "purpose": ["chlorosis_treatment", "color_improvement"],
+      "applicable_conditions": ["chlorosis", "yellowing"],
+      "avoid_conditions": [],
+      "notes": "Используется при пожелтении газона (хлорозе)"
+    },
+    {
+      "id": "fert_compost",
+      "name": "Компост",
+      "category": "organic",
+      "season": ["spring", "autumn"],
+      "nutrients": {
+        "nitrogen": "low",
+        "phosphorus": "low",
+        "potassium": "low"
+      },
+      "purpose": ["soil_improvement"],
+      "applicable_conditions": ["poor_soil"],
+      "avoid_conditions": [],
+      "notes": "Улучшает структуру почвы и микрофлору"
+    },
+    {
+      "id": "fert_biohumus",
+      "name": "Биогумус",
+      "category": "organic",
+      "season": ["spring", "summer"],
+      "nutrients": {
+        "nitrogen": "medium",
+        "phosphorus": "low",
+        "potassium": "low"
+      },
+      "purpose": ["soil_improvement", "growth_support"],
+      "applicable_conditions": ["weak_soil"],
+      "avoid_conditions": [],
+      "notes": "Мягкое органическое удобрение с длительным эффектом"
+    },
+    {
+      "id": "fert_wood_ash",
+      "name": "Древесная зола",
+      "category": "organic",
+      "season": ["autumn"],
+      "nutrients": {
+        "nitrogen": "low",
+        "phosphorus": "low",
+        "potassium": "medium"
+      },
+      "purpose": ["soil_improvement", "stress_resistance"],
+      "applicable_conditions": ["acidic_soil"],
+      "avoid_conditions": [],
+      "notes": "Источник калия и микроэлементов"
+    },
+    {
+      "id": "fert_prod_fertika_spring_summer",
+      "name": "Фертика Газонное. Весна-Лето",
+      "category": "mineral",
+      "product_type": "commercial_product",
+      "brand": "Fertika (Фертика)",
+      "parent_type_id": "fert_npk_micro",
+      "season": ["spring", "summer"],
+      "nutrients": {
+        "nitrogen": "high",
+        "phosphorus": "medium",
+        "potassium": "high"
+      },
+      "purpose": ["color_improvement", "maintenance", "growth"],
+      "applicable_conditions": ["pale_grass", "general_maintenance", "post_winter_recovery"],
+      "avoid_conditions": ["autumn", "drought"],
+      "notes": "Комплексное минеральное удобрение с микроэлементами (бор, медь, цинк, марганец, молибден, железо) для весенне-летней подкормки газонных трав. Содержит кальций, магний, серу. Дозировку и способ внесения определяйте по актуальной инструкции производителя."
+    },
+    {
+      "id": "fert_prod_fertika_autumn",
+      "name": "Фертика Газонное. Осень",
+      "category": "mineral",
+      "product_type": "commercial_product",
+      "brand": "Fertika (Фертика)",
+      "parent_type_id": "fert_autumn_pk",
+      "season": ["autumn"],
+      "nutrients": {
+        "nitrogen": "low",
+        "phosphorus": "medium",
+        "potassium": "high"
+      },
+      "purpose": ["winter_preparation", "stress_resistance", "root_development"],
+      "applicable_conditions": ["autumn_care", "winter_preparation"],
+      "avoid_conditions": ["spring", "summer"],
+      "notes": "Осеннее удобрение с высоким содержанием калия и фосфора, с микроэлементами (кальций, магний, сера, бор, медь, железо, марганец, цинк, молибден). Повышает зимостойкость, укрепляет корневую систему, улучшает переносимость стрессов и болезней. Дозировку и способ внесения определяйте по актуальной инструкции производителя."
+    },
+    {
+      "id": "fert_prod_bona_forte_spring_summer",
+      "name": "Бона Форте Газонное. Весна-Лето",
+      "category": "mineral",
+      "product_type": "commercial_product",
+      "brand": "Bona Forte (Бона Форте)",
+      "parent_type_id": "fert_nitrogen_spring",
+      "season": ["spring", "summer"],
+      "nutrients": {
+        "nitrogen": "high",
+        "phosphorus": "low",
+        "potassium": "medium"
+      },
+      "purpose": ["growth", "greening", "color_improvement"],
+      "applicable_conditions": ["weak_growth", "pale_grass", "post_winter_recovery"],
+      "avoid_conditions": ["autumn", "heat_stress", "drought"],
+      "notes": "Весенне-летнее удобрение с повышенным содержанием азота. Поддерживает яркий зелёный цвет газона, стимулирует рост травы. Дозировку и способ внесения определяйте по актуальной инструкции производителя."
+    },
+    {
+      "id": "fert_prod_agrikola_lawn",
+      "name": "Агрикола Газонное",
+      "category": "mineral",
+      "product_type": "commercial_product",
+      "brand": "Агрикола",
+      "parent_type_id": "fert_npk_micro",
+      "season": ["spring", "summer"],
+      "nutrients": {
+        "nitrogen": "medium",
+        "phosphorus": "medium",
+        "potassium": "high"
+      },
+      "purpose": ["color_improvement", "maintenance", "growth", "winter_preparation"],
+      "applicable_conditions": ["pale_grass", "general_maintenance"],
+      "avoid_conditions": ["drought"],
+      "notes": "Комплексное удобрение NPK 11:12:26 без хлора, с микроэлементами (в жидкой форме Агрикола Аква — бор, медь, цинк, марганец, железо, молибден). Подходит для всех видов газона, обеспечивает ярко-зелёный цвет, уплотняет травяной покров, улучшает перезимовку. Дозировку и способ внесения определяйте по актуальной инструкции производителя."
+    },
+    {
+      "id": "fert_prod_pokon_long",
+      "name": "Pokon для газонов длительного действия",
+      "category": "mineral",
+      "product_type": "commercial_product",
+      "brand": "Pokon (Нидерланды)",
+      "parent_type_id": "fert_nitrogen_spring",
+      "season": ["spring", "summer"],
+      "nutrients": {
+        "nitrogen": "high",
+        "phosphorus": "medium",
+        "potassium": "medium"
+      },
+      "purpose": ["growth", "greening", "maintenance"],
+      "applicable_conditions": ["weak_growth", "pale_grass", "general_maintenance"],
+      "avoid_conditions": ["autumn", "heat_stress", "drought"],
+      "notes": "Весеннее удобрение пролонгированного действия (NPK 30:7:8 + MgO + SO₃). Гранулы с водопроницаемой оболочкой постепенно высвобождают питательные вещества в течение всего сезона. Вносится 1 раз весной. Дозировку и способ внесения определяйте по актуальной инструкции производителя."
+    },
+    {
+      "id": "fert_prod_akvarin_lawn",
+      "name": "Акварин Газонный",
+      "category": "mineral",
+      "product_type": "commercial_product",
+      "brand": "Буйские удобрения",
+      "parent_type_id": "fert_npk_micro",
+      "season": ["spring", "summer", "early_autumn"],
+      "nutrients": {
+        "nitrogen": "high",
+        "phosphorus": "medium",
+        "potassium": "medium"
+      },
+      "purpose": ["growth", "color_improvement", "maintenance"],
+      "applicable_conditions": ["pale_grass", "weak_growth", "general_maintenance"],
+      "avoid_conditions": ["drought"],
+      "notes": "Водорастворимое комплексное удобрение NPK 20:8:8 с микроэлементами. Применяется для корневой и внекорневой подкормки газонных трав с ранней весны до конца сентября с интервалом 14–20 дней. Дозировку и способ внесения определяйте по актуальной инструкции производителя."
+    },
+    {
+      "id": "fert_prod_bona_forte_recovery",
+      "name": "Бона Форте для восстановления газона",
+      "category": "mineral",
+      "product_type": "commercial_product",
+      "brand": "Bona Forte (Бона Форте)",
+      "parent_type_id": "fert_npk_micro",
+      "season": ["spring", "summer", "early_autumn"],
+      "nutrients": {
+        "nitrogen": "medium",
+        "phosphorus": "medium",
+        "potassium": "medium"
+      },
+      "purpose": ["growth", "color_improvement", "recovery"],
+      "applicable_conditions": ["weak_lawn", "thinned_lawn", "post_stress_recovery"],
+      "avoid_conditions": [],
+      "notes": "Комплексное удобрение с микроэлементами для восстановления ослабленного и повреждённого газона. Стимулирует рост травы, повышает густоту травостоя. Дозировку и способ внесения определяйте по актуальной инструкции производителя."
+    },
+    {
+      "id": "fert_prod_fertika_iron",
+      "name": "Фертика Газонное. Хелат железа",
+      "category": "micronutrient",
+      "product_type": "commercial_product",
+      "brand": "Fertika (Фертика)",
+      "parent_type_id": "fert_iron",
+      "season": ["spring", "summer", "early_autumn"],
+      "nutrients": {},
+      "purpose": ["chlorosis_treatment", "color_improvement"],
+      "applicable_conditions": ["chlorosis", "yellowing", "moss_suppression"],
+      "avoid_conditions": ["heat_stress"],
+      "notes": "Хелатное микроудобрение для устранения хлороза и поддержания насыщенного зелёного цвета газона. Может применяться для подавления мха. Дозировку и способ внесения определяйте по актуальной инструкции производителя."
+    }
+  ]
+}

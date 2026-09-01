@@ -1,0 +1,6 @@
+# GreenScan backend — игнорируемое
+logs/
+*.log
+__pycache__/
+*.pyc
+.env

@@ -1,0 +1,70 @@
+{
+    "version": "1.0",
+    "rules": [
+      {
+        "id": "rule_dry_lawn",
+        "conditions": ["dryness"],
+        "actions": ["water_increase"]
+      },
+      {
+        "id": "rule_waterlogging",
+        "conditions": ["excess_moisture"],
+        "actions": ["water_reduce", "improve_drainage"]
+      },
+      {
+        "id": "rule_pale_grass_spring",
+        "conditions": ["pale_grass", "spring"],
+        "actions": ["apply_fertilizer"]
+      },
+      {
+        "id": "rule_slow_growth",
+        "conditions": ["slow_growth"],
+        "actions": ["apply_fertilizer", "soil_improvement"]
+      },
+      {
+        "id": "rule_weeds_present",
+        "conditions": ["weed_presence"],
+        "actions": ["apply_herbicide"]
+      },
+      {
+        "id": "rule_fungal_signs",
+        "conditions": ["fungal_signs"],
+        "actions": ["apply_fungicide", "water_reduce"]
+      },
+      {
+        "id": "rule_bare_spots",
+        "conditions": ["bare_spots"],
+        "actions": ["overseed"]
+      },
+      {
+        "id": "rule_thin_lawn",
+        "conditions": ["thin_lawn"],
+        "actions": ["overseed", "apply_fertilizer"]
+      },
+      {
+        "id": "rule_compacted_soil",
+        "conditions": ["soil_compaction"],
+        "actions": ["aeration"]
+      },
+      {
+        "id": "rule_thatch",
+        "conditions": ["thatch_layer"],
+        "actions": ["dethatching"]
+      },
+      {
+        "id": "rule_moss",
+        "conditions": ["moss"],
+        "actions": ["improve_drainage", "reduce_shade"]
+      },
+      {
+        "id": "rule_shade_problem",
+        "conditions": ["shade"],
+        "actions": ["reduce_shade", "overseed"]
+      },
+      {
+        "id": "rule_heat_stress",
+        "conditions": ["heat_stress"],
+        "actions": ["water_increase", "mowing_adjust"]
+      }
+    ]
+  }

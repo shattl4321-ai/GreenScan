@@ -1,0 +1,107 @@
+{
+  "version": "1.0",
+  "recommendations": [
+    {
+      "id": "water_increase",
+      "name": "Увеличить полив",
+      "category": "watering",
+      "description": "Увеличить частоту или объем полива газона",
+      "related_to": ["dryness", "weak_growth"]
+    },
+    {
+      "id": "water_reduce",
+      "name": "Сократить полив",
+      "category": "watering",
+      "description": "Снизить частоту полива для предотвращения переувлажнения",
+      "related_to": ["excess_moisture", "fungal_risk"]
+    },
+    {
+      "id": "apply_fertilizer",
+      "name": "Внести удобрение",
+      "category": "fertilization",
+      "description": "Подкормить газон удобрением в зависимости от сезона и состояния",
+      "related_to": ["nutrient_deficiency", "pale_grass", "slow_growth"]
+    },
+
+    {
+      "id": "spot_weed_control",
+      "name": "Точечная обработка сорняков",
+      "category": "weed_control",
+      "description": "Удалить отдельные сорняки вручную или точечно обработать гербицидом",
+      "related_to": ["weed_presence"]
+    },
+    {
+      "id": "full_weed_control",
+      "name": "Сплошная обработка газона",
+      "category": "weed_control",
+      "description": "Использовать гербицид для обработки всего участка",
+      "related_to": ["weed_presence"]
+    },
+
+    {
+      "id": "apply_fungicide",
+      "name": "Обработать от болезней",
+      "category": "disease_control",
+      "description": "Применить фунгицид при признаках грибковых заболеваний",
+      "related_to": ["fungal_signs", "spots", "mold"]
+    },
+    {
+      "id": "overseed",
+      "name": "Подсев травы",
+      "category": "seeding",
+      "description": "Подсеять газон для восстановления плотности",
+      "related_to": ["bare_spots", "thin_lawn"]
+    },
+    {
+      "id": "aeration",
+      "name": "Аэрация почвы",
+      "category": "soil_care",
+      "description": "Проколоть почву для улучшения доступа воздуха и воды",
+      "related_to": ["soil_compaction", "poor_growth"]
+    },
+    {
+      "id": "dethatching",
+      "name": "Удаление войлока (скарификация)",
+      "category": "soil_care",
+      "description": "Удалить слой сухой травы и мусора",
+      "related_to": ["thatch_layer", "poor_water_absorption"]
+    },
+
+    {
+      "id": "mow_lawn",
+      "name": "Покосить газон",
+      "category": "maintenance",
+      "description": "Скосить траву до оптимальной высоты для здоровья газона",
+      "related_to": ["needs_mowing"]
+    },
+
+    {
+      "id": "mowing_adjust",
+      "name": "Скорректировать стрижку",
+      "category": "maintenance",
+      "description": "Изменить высоту или частоту стрижки газона",
+      "related_to": ["weak_grass", "stress"]
+    },
+    {
+      "id": "improve_drainage",
+      "name": "Улучшить дренаж",
+      "category": "soil_care",
+      "description": "Снизить застой воды на участке",
+      "related_to": ["waterlogging", "moss", "fungal_risk"]
+    },
+    {
+      "id": "reduce_shade",
+      "name": "Уменьшить затенение",
+      "category": "environment",
+      "description": "Увеличить доступ солнечного света (обрезка деревьев и т.д.)",
+      "related_to": ["shade", "moss", "weak_growth"]
+    },
+    {
+      "id": "soil_improvement",
+      "name": "Улучшить почву",
+      "category": "soil_care",
+      "description": "Внести органику или улучшить структуру почвы",
+      "related_to": ["poor_soil", "weak_growth"]
+    }
+  ]
+}
