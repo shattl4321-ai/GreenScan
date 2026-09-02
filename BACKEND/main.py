@@ -74,7 +74,7 @@ app.add_middleware(
 )
 
 engine = RuleEngine()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY")) if provider_name == "openai" else None
 
 logger.info(
     "GreenScan backend started. provider=%s model=%s",
