@@ -9,7 +9,7 @@ client = OpenAI(
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
-model = "gemini-flash-latest"
+model = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite").strip()
 
 
 def analyze_image(base64_image: str) -> dict:
