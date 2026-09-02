@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const API_URL = "http://127.0.0.1:8001/analyze-photo";
+  const API_URL = "/analyze-photo";
   const MIN_FILES = 2;
   const MAX_FILES = 5;
   const MODEL_LABEL = "Vision AI";
