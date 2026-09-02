@@ -1,0 +1,11 @@
+.git
+.gitignore
+venv
+.claude
+PROMTS
+DOCS
+__pycache__
+*.pyc
+*.pyo
+*.log
+.env
